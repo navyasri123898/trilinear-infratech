@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "predeploy": "npm run build:gh",
-    "build:gh": "ng build --configuration production --base-href /trilinear-infratech/ --output-path docs",
+    "build:gh": "ng build --configuration production --base-href /trilinear-infratech/",
     "deploy": "gh-pages -d docs"
   },
   "engines": {
