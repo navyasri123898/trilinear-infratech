@@ -8,7 +8,7 @@
     "test": "ng test",
     "predeploy": "npm run build:gh",
     "build:gh": "ng build --configuration production --base-href /trilinear-infratech/",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d docs/browser"
   },
   "engines": {
     "node": ">=24"
