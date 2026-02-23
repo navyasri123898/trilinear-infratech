@@ -1,11 +1,14 @@
 {
-  "name": "trilinear-infratech-site",
+  "name": "trilinear-infratech",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test"
+    "test": "ng test",
+    "predeploy": "npm run build:gh",
+    "build:gh": "ng build --configuration production --base-href /trilinear-infratech/ --output-path docs",
+    "deploy": "gh-pages -d docs"
   },
   "engines": {
     "node": ">=24"
@@ -28,6 +31,7 @@
     "@angular/cli": "^21.0.0",
     "@angular/compiler-cli": "^21.0.0",
     "@types/jasmine": "^5.1.4",
+    "gh-pages": "^6.3.0",
     "jasmine-core": "^5.1.2",
     "karma": "^6.4.3",
     "karma-chrome-launcher": "^3.2.0",
